@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import KotlinNativeTestLibrary
+
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func onButtonClicked(_ sender: Any) {
+        
+        let complexClass = KNTLComplexClass(information: "This info describes the complex object")
+        
+        textView.text = complexClass.information + "\nBool = " + String(complexClass.getBool()) + "\nGeneric = " + complexClass.getGeneric().returnString(string: "This string has been returned through several levels")
+        
+    }
+    
 }
-
