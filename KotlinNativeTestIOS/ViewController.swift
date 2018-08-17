@@ -29,6 +29,13 @@ class ViewController: UIViewController {
         
         textView.text = complexClass.information + "\nBool = " + String(complexClass.getBool()) + "\nGeneric = " + complexClass.getGeneric().returnString(string: "This string has been returned through several levels")
         
+        textView.text.append(getEnumDetails(value: KNTLTestEnum.enum1))
+        textView.text.append(getEnumDetails(value: KNTLTestEnum.enum2))
+        textView.text.append(getEnumDetails(value: KNTLTestEnum.enum5))
+        
     }
     
+    private func getEnumDetails(value: KNTLTestEnum) -> String {
+        return "\nInstance of TestEnum. Number = " + String(value.number) + "; valueString = " + value.valueString
+    }
 }

@@ -12,8 +12,8 @@
 		4C00E46C2124595400BD7A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C00E46A2124595400BD7A62 /* Main.storyboard */; };
 		4C00E46E2124595500BD7A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C00E46D2124595500BD7A62 /* Assets.xcassets */; };
 		4C00E4712124595500BD7A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C00E46F2124595500BD7A62 /* LaunchScreen.storyboard */; };
-		4C00E479212459C900BD7A62 /* KotlinNativeTestLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C00E478212459C900BD7A62 /* KotlinNativeTestLibrary.framework */; };
-		4C00E47A212459C900BD7A62 /* KotlinNativeTestLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C00E478212459C900BD7A62 /* KotlinNativeTestLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CF2D0472125C4B6003042B0 /* KotlinNativeTestLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF2D0462125C4B6003042B0 /* KotlinNativeTestLibrary.framework */; };
+		4CF2D0482125C4B6003042B0 /* KotlinNativeTestLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF2D0462125C4B6003042B0 /* KotlinNativeTestLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4C00E47A212459C900BD7A62 /* KotlinNativeTestLibrary.framework in Embed Frameworks */,
+				4CF2D0482125C4B6003042B0 /* KotlinNativeTestLibrary.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +38,7 @@
 		4C00E46D2124595500BD7A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C00E4702124595500BD7A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C00E4722124595500BD7A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C00E478212459C900BD7A62 /* KotlinNativeTestLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KotlinNativeTestLibrary.framework; path = ../../kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/KotlinNativeTestLibrary/KotlinNativeTestLibrary.framework; sourceTree = "<group>"; };
+		4CF2D0462125C4B6003042B0 /* KotlinNativeTestLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KotlinNativeTestLibrary.framework; path = ../../kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/KotlinNativeTestLibrary.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C00E479212459C900BD7A62 /* KotlinNativeTestLibrary.framework in Frameworks */,
+				4CF2D0472125C4B6003042B0 /* KotlinNativeTestLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		4C00E45A2124595400BD7A62 = {
 			isa = PBXGroup;
 			children = (
-				4C00E478212459C900BD7A62 /* KotlinNativeTestLibrary.framework */,
+				4CF2D0462125C4B6003042B0 /* KotlinNativeTestLibrary.framework */,
 				4C00E4652124595400BD7A62 /* KotlinNativeTestIOS */,
 				4C00E4642124595400BD7A62 /* Products */,
 			);
@@ -303,7 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7529UAQB93;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/rbridge/code/kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/KotlinNativeTestLibrary/**";
+				FRAMEWORK_SEARCH_PATHS = "/Users/rbridge/code/kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/**";
 				INFOPLIST_FILE = KotlinNativeTestIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7529UAQB93;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "/Users/rbridge/code/kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/KotlinNativeTestLibrary/**";
+				FRAMEWORK_SEARCH_PATHS = "/Users/rbridge/code/kotlin/KotlinNativeTestLibrary/build/konan/bin/iphone_universal_framework/**";
 				INFOPLIST_FILE = KotlinNativeTestIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1.2;
 				LD_RUNPATH_SEARCH_PATHS = (
